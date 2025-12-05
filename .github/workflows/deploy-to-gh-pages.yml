@@ -8,6 +8,10 @@ on:
 jobs:
   bild-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
 
     steps:
       - name: Chackout repository
